@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amber Yiyao Zhou</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        .time{
+        width: 40%;
+        display: inline;
+       }
+    .date-label{
+        display: block;
+       }
+        .check-contener.row{
+            position: relative;
+            left: 16px;
+            flex-wrap: wrap;
+        }
+        .form-check{
+            width: 140px;
+        }
+        .title{
+            color: #2b7c75;
+        }
+        .to{
+            align-self: center;
+        }
+        
+        @media (min-width:700px) and (max-width:1200px) {
+            .phone-and-email{
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .phone-and-email .form-group{
+                width: 100%;
+            }
+            .phone-and-email .form-group:nth-child(odd){
+                margin-right: 15px;
+            }
+            .phone-and-email .form-group:nth-child(even){
+                margin-left: 15px;
+            }
+        }
+        
+        @media (min-width:1201px) {
+            form{
+                display: flex;
+                justify-content: space-between;
+            }
+            form>div{
+                width: 100%;
+            }
+            form .basic-info{
+                margin-right: 15px;
+            }
+            form .work-info{
+                margin-left: 15px;
+            }
+            button{
+                position: absolute;
+                left: 10%;
+                bottom: -4rem;
+            }
+            .details{
+                margin-bottom: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Amber</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="contact.html">Hire Me</a>
+                </li>
+            </ul>
+
+        </nav>
+        <header>
+            <div class="photo">
+                <img class="photo" src="img/WeChat%20Image_20181203155646.jpg" alt="Amber's Photo" /></div>
+            <div class="name">
+                <h1 class="display-3">Contact for <div>Hiring</div>
+                </h1>
+            </div>
+        </header>
+        <div class="form my-4">
+            <form name="hair-me">
+                <div class="basic-info">
+                    <div class="hire-name row form-group">
+                        <label class="title col-12">Name</label>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="phone-and-email">
+                        <div class="form-group">
+                            <label for="phone" class="title">Phone number</label>
+                            <input type="tel" class="phone form-control" id="phone" placeholder="(222)333-444">
+                            <small id="phoneHelp" class="form-text text-muted">I'll never share your phone number with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="title">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="form-group">
+                        <label for="date" class="title">Working date</label>
+                        <div class="check-contener row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Monday" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Monday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Tuesday" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Tuesday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Wednesday" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3">
+                                    Wednesday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Thursday" id="defaultCheck4">
+                                <label class="form-check-label" for="defaultCheck4">
+                                    Thursday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Friday" id="defaultCheck5">
+                                <label class="form-check-label" for="defaultCheck5">
+                                    Friday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Saturday" id="defaultCheck6">
+                                <label class="form-check-label" for="defaultCheck6">
+                                    Saturday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Sunday" id="defaultCheck7">
+                                <label class="form-check-label" for="defaultCheck7">
+                                    Sunday
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="title date-label">Working time</label>
+                        <div class="row mx-0">
+                            <input type="time" class="time form-control col" /> <span class="to col-1 text-center">to</span><input type="time" class="col time form-control" />
+                        </div>
+                    </div>
+                    <div class="details form-group">
+                        <label for="details" class="title">Other working details</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-outline-info">Submit</button>
+                </div>
+            </form>
+
+        </div>
+        <footer class="py-5 text-center">
+            <p>&copy; 2018 Amber Yiyao Zhou</p>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
