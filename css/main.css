@@ -133,45 +133,6 @@ section {
     border-color: #2b7c75;
 }
 
-
-@media all and (max-aspect-ratio: 9/16) {
-    nav {
-        padding-right: 5%;
-    }
-
-    main header {
-        padding: 0 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    main header img {
-        height: 200px;
-        border-radius: 50%;
-    }
-
-    header photo {
-        align-self: flex-end;
-    }
-
-    header .name {
-        text-align: center;
-    }
-
-    header .name h1 {
-        font-size: 3.5rem;
-    }
-
-    header .name h2 {
-        font-size: 1.5rem;
-    }
-
-    .form {
-        width: 90%;
-    }
-}
-
 @media (max-width:576px) {
     nav {
         padding-right: 5%;
