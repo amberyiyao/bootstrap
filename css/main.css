@@ -133,7 +133,7 @@ section {
     border-color: #2b7c75;
 }
 
-@media (max-width:576px) {
+@media (max-width:599px) {
     nav {
         padding-right: 5%;
     }
