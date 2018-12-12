@@ -32,6 +32,14 @@
             text-align: right;
         }
         
+        p.text-center{
+            border: 1px solid #ddd;
+            border-right: 0;
+            border-left: 0;
+            padding: 1rem 0;
+            margin: 2.4rem 0;
+        }
+        
         @media (min-width:700px) and (max-width:1200px) {
             .phone-and-email{
                 display: flex;
@@ -93,6 +101,9 @@
             </div>
         </header>
         <div class="form my-4">
+           <p class="text-center">
+               If there is any work sutable for me, please submit the details of it. I will contact you as soon as possible.
+           </p>
             <form name="hair-me">
                 <div class="basic-info">
                     <div class="hire-name row form-group">
@@ -176,7 +187,7 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write something about the work that I need to know..." required></textarea>
                     </div>
                     <div class="button-form">
-                    <button type="button" class="btn btn-outline-info">Submit</button>
+                        <button type="button" class="btn btn-outline-info">Submit</button>
                     </div>
                 </div>
             </form>
