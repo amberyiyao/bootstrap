@@ -28,6 +28,9 @@
         .to{
             align-self: center;
         }
+        .button-form{
+            text-align: right;
+        }
         
         @media (min-width:700px) and (max-width:1200px) {
             .phone-and-email{
@@ -59,14 +62,6 @@
             }
             form .work-info{
                 margin-left: 15px;
-            }
-            button{
-                position: absolute;
-                left: 10%;
-                bottom: -4rem;
-            }
-            .details{
-                margin-bottom: 0;
             }
         }
 
@@ -178,9 +173,11 @@
                     </div>
                     <div class="details form-group">
                         <label for="details" class="title">Other working details</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write something about the work that I need to know..." required></textarea>
                     </div>
+                    <div class="button-form">
                     <button type="button" class="btn btn-outline-info">Submit</button>
+                    </div>
                 </div>
             </form>
 

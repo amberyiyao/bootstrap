@@ -159,7 +159,7 @@ section {
     }
 
     header .name h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     header .name h2 {
@@ -168,5 +168,25 @@ section {
 
     .form {
         width: 90%;
+    }
+}
+
+@media (min-width:600px) and (max-width:1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    header .name h1 {
+        font-size: 3.6rem;
+    }
+
+    header .name h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:1201px) {
+    html {
+        font-size: 20px;
     }
 }
