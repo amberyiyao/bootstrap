@@ -134,7 +134,7 @@ section {
 }
 
 
-@media all and (max-aspect-ratio: 9/16){
+@media all and (max-aspect-ratio: 9/16) {
     nav {
         padding-right: 5%;
     }
