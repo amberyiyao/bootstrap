@@ -59,12 +59,19 @@ nav a {
     color: #2b7c75;
 }
 
-nav a:hover {
-    color: #21645e;
+nav a.page{
+    text-decoration: underline;
 }
 
-nav a.disabled {
-    padding-right: 0;
+nav a:hover {
+    background-color: #2b7c75;
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav a:active {
+    background-color: #2b7c75;
+    color: #fff;
 }
 
 
