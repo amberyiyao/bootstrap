@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+
 body::before {
     content: "";
     background-color: #f6f6f6;
@@ -30,6 +38,7 @@ main header {
     color: #2b7c75;
     font-weight: 100;
     background-attachment: fixed;
+
 }
 
 main header img {
@@ -59,7 +68,7 @@ nav a {
     color: #2b7c75;
 }
 
-nav a.page{
+nav a.page {
     text-decoration: underline;
 }
 
